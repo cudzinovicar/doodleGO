@@ -28,4 +28,4 @@ npm install
 
 ## Contact
 
-Email cudzinovicar@gmail.com for any questions
+Email clearedcachedev@gmail.com for any questions
