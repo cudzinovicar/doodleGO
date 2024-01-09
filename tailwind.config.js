@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -10,5 +11,6 @@ export default {
   plugins: [
     require('@tailwindcss/forms'),
   ],
+  darkMode: 'class',
 }
 

@@ -1,8 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
-import NavBar from '../components/NavBar.vue';
+//import NavBar from '../components/NavBar.vue';
 import Home from '../views/Home.vue';
 import SetCreation from '../views/SetCreation.vue';
 import BrowseContent from '../views/BrowseContent.vue';
+import SandboxTest from '../views/SandboxTest.vue';
+import AllSettings from '../views/AllSettings.vue';
 import DefaultLayout from '../components/DefaultLayout.vue';
 
 
@@ -17,6 +19,11 @@ const routes = [
           component: Home,
         },
         {
+          path: "/sandbox",
+          name: "sandboxTest",
+          component: SandboxTest,
+        },
+        {
           path: "/createSet",
           name: "createSet",
           component: SetCreation,
@@ -25,7 +32,12 @@ const routes = [
           path: "/browseContent",
           name: "browseContent",
           component: BrowseContent,
-        }
+        },
+        {
+          path: "/settings",
+          name: "allSettings",
+          component: AllSettings,
+        },
       ]
     },
     {
