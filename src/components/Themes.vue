@@ -1,5 +1,5 @@
 <script setup>
-const vm = new Vue({
+const vm = defineModel({
     data:{
         selected: ""
     },
