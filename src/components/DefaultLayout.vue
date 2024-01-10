@@ -1,12 +1,12 @@
 <template>
    <navbar />
-      <div class="max-w-[1200px] mx-auto">
-        <router-view />
-      </div>
+  <div class="text-black dark:text-white max-w-[1200px] mx-auto">
+    <router-view />
+  </div>
  
-  </template>
+</template>
   
-  <script setup>
-  import Navbar from "../components/NavBar.vue";
+<script setup>
+  import Navbar from "./NavBar.vue";
 
-  </script>
+</script>
