@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "tailwindcss-animated": "^1.0.1",
     "vue": "^3.2.45",
     "vue-router": "^4.2.5",
     "vuex": "^4.1.0"
