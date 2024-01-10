@@ -23,16 +23,16 @@ const routes = [
           name: "sandboxTest",
           component: SandboxTest,
         },
-        {
-          path: "/createSet",
-          name: "createSet",
-          component: SetCreation,
-        },
-        {
-          path: "/browseContent",
-          name: "browseContent",
-          component: BrowseContent,
-        },
+        // {
+        //   path: "/createSet",
+        //   name: "createSet",
+        //   component: SetCreation,
+        // },
+        // {
+        //   path: "/browseContent",
+        //   name: "browseContent",
+        //   component: BrowseContent,
+        // },
         {
           path: "/settings",
           name: "allSettings",
