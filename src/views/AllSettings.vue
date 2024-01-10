@@ -6,9 +6,7 @@
 
 <script setup>
     import Themes from '../components/Themes.vue'
-    import {ref} from 'vue'
 
-    const theme = ref('dark')
     
 
 
