@@ -2,8 +2,8 @@
     <nav class ="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <router-link :to="{name : 'home'}" class=" flex items-center space-x-3 rtl:space-x-reverse" >
-                <!-- <img alt="doodleGo" :src ="logo" class ="fill-current text-white h-10">  -->
-                <svg alt="doodleGo" class ="start-0 fill-current text-black dark:text-white h-10"   version="1.1"  viewBox="0 0 640 200" xml:space="preserve">
+                
+                <svg alt="doodleGO" class ="start-0 fill-current text-black dark:text-white h-10"   version="1.1"  viewBox="0 0 640 200" xml:space="preserve">
                 <g transform="matrix(1 0 0 1 182.3366972557 106.511423565)"  id="ev0uxKziSWBtpPXVCCzDs">
     		<text  font-family="Qwigley" font-size="199" font-style="normal"  font-weight="normal" line-height="1" style=" fill-rule: nonzero; opacity: 1; "><tspan x="-163.5" y="57.44886">doodle</tspan></text>
                 </g>
@@ -48,7 +48,6 @@
 
 <script setup>
     import { ref } from 'vue'
-    import logo from "../assets/logo.svg"
 
     const showDiv = ref(false);
     
