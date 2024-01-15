@@ -20,8 +20,8 @@
         </div>
         <div>
             <p class=" font-mono items-center justify-center whitespace-pre-line p-5 my-36"> 
-                This project is in pre-alpha. <br>Development started early this year and changes are being added frequently. <br>
-                <a class="dark: text-indigo-400" href="https://github.com/cudzinovicar/doodleGO">Check out more and stay up-to-date on GitHub</a>
+                <b>doodleGO</b> is in pre-alpha. <br>Development started early this year and changes are being added frequently. <br>
+                <a class="dark: text-indigo-400" href="https://github.com/cudzinovicar/doodleGO">Check out more and stay up-to-date on the doodleGO GitHub page</a>
             </p>
         </div>
 
