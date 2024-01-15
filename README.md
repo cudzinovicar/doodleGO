@@ -1,5 +1,4 @@
 # doodleGO
-# doodleGO
 
 ### Ready
 A widely available web app game for desktop and mobile use.
