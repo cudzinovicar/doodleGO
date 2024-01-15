@@ -5,7 +5,7 @@
             <img class="fill-black" :src="imgPath" :alt="alt"/>
         </div>
         
-        <p class=" flex font-mono items-center justify-center md:w-1/2 whitespace-pre-line p-5">{{ desc }}</p>
+        <p class=" flex font-mono items-center justify-center md:w-1/2 whitespace-pre-line p-5 text-lg">{{ desc }}</p>
         </div>
         
 </template>

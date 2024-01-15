@@ -9,9 +9,12 @@ Customize drawing session to any preference
 
 Upload the GO results to social media or the integrated platform to share and interact with other users and find more Sets.
 
-## Setup
+## More Info and Documentation
+Check out the [wiki page](https://github.com/cudzinovicar/doodleGO/wiki)
 
-1. Install Node.js version 20.10.0.
+## Initial Setup
+
+1. Install Node.js version 20
 2. Install Visual Studio Code(VSC) or any other compatible IDE
 3. Clone the repository(Github desktop recommended)
 4. Open the local repository folder in VSC
