@@ -1,8 +1,17 @@
 <template>
     <nav class ="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <router-link :to="{name : 'home'}" class="text-black dark:text-white flex items-center space-x-3 rtl:space-x-reverse" >
-                doodleGO
+            <router-link :to="{name : 'home'}" class=" flex items-center space-x-3 rtl:space-x-reverse" >
+                
+                <svg alt="doodleGO" class ="start-0 fill-current text-black dark:text-white h-10"   version="1.1"  viewBox="0 0 640 200" xml:space="preserve">
+                <g transform="matrix(1 0 0 1 182.3366972557 106.511423565)"  id="ev0uxKziSWBtpPXVCCzDs">
+    		<text  font-family="Qwigley" font-size="199" font-style="normal"  font-weight="normal" line-height="1" style=" fill-rule: nonzero; opacity: 1; "><tspan x="-163.5" y="57.44886">doodle</tspan></text>
+                </g>
+  
+                <g transform="matrix(1 0 0 1 524.1831021095 126.7502252364)"  id="XNVE2Uo7hHcZLa8UpIPWL">
+    		<text  font-family="Permanent Marker" font-size="192" font-style="normal" font-weight="normal" line-height="1" style="fill-rule: nonzero; opacity: 1; "><tspan x="-192" y="44.79488">GO</tspan></text>
+                </g></svg>
+                
             </router-link>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                 <button @click="showDiv  = !showDiv" collapse_target="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
@@ -45,3 +54,7 @@
    
     
 </script>
+
+
+
+
