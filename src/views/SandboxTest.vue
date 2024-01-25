@@ -1,28 +1,14 @@
 <template>
-    <div ref="Prompter">
-
-    </div>
-
-    <vue-drawing-canvas ref="VueCanvasDrawing" 
-        width=width height = height />
+    <GoGame width="400" height="400" time="60" :prompts='["Dog", "Mickey Mouse", "Tacos"]'
+    class="w-full overflow-auto justify-center align-middle " />
 </template>
 
-
 <script>
-    import VueDrawingCanvas from "vue-drawing-canvas";
-    import {config} from "../go/config.js"
+import GoGame from './GoGame.vue';
 
-    export default{
-        name: "GoGame",
-        props:{
-            palette: String,
-            tools: String,
-            width: Number,
-            height: Number,
-            time: Number
-        },
-        components: {
-            VueDrawingCanvas,
-        }
-    };
+export default {
+    components: {
+        GoGame,
+    },
+};
 </script>
