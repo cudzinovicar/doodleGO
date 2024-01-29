@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.1.2",
+    "pinia": "^2.1.7",
     "tailwindcss-animated": "^1.0.1",
     "vue": "^3.2.45",
+    "vue-color": "^2.8.1",
     "vue-router": "^4.2.5",
     "vuex": "^4.1.0"
   },
