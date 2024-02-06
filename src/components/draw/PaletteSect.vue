@@ -1,16 +1,26 @@
 
 
 <script>
-    import { Sketch } from 'vue-color';
-
+    import  sketch from 'vue-color';
+    //const props = defineProps(['initialCounter'])
+    //var Sketch = require('vue-color/src/Sketch.vue');
     export default {
         components:{
-            'sketch-picker': Sketch,
-        }
+            'sketch-picker': sketch,
+        },
+        props:{
+            colors: Array
+        },
+        data () {
+            return {
+            colors: this.colors
+            }
+        },
     }
 </script>
 
-    <template>
-        <sketch-picker />
+<template>
+    <p>Palette/Color</p>
+    <sketch-picker v-model="colors" />
 
-    </template>
+</template>
