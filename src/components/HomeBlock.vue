@@ -1,5 +1,5 @@
 <template>
-    <div ref="main" :class="getBackgroundGrad()" class=" mx-auto animate-fade-up animate-ease-out animate-delay-100  box-border text-center h-fit w-fit break-after-auto p-5 my-36 md:my-32 md:flex" >
+    <div ref="main" :class="getBackgroundGrad()" class=" mx-auto animate-fade-up animate-ease-out animate-delay-100  box-border text-center h-fit w-fit break-after-auto p-5 mb-36 mt-8 md:flex" >
         <div class ="md:w-1/2">
             <h1 class="pb-5 font-extrabold">{{ title }}</h1>
             <img class="fill-black" :src="imgPath" :alt="alt"/>

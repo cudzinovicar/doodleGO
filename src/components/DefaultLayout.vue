@@ -1,10 +1,14 @@
 <template>
    
-  <div class="text-black dark:text-white mx-auto items-baseline pt-50 items-center
+  <div class="text-black dark:text-white block w-full mx-auto items-baseline pb-50 items-center
    justify-center flex-grow">
-   <navbar class="flex-1"/>
+    <navbar class="flex-1"/>
+    
+  </div>
+  <div class="">
     <router-view class="flex-1"/>
   </div>
+  
  
 </template>
   

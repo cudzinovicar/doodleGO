@@ -1,23 +1,46 @@
 
 <template>
+  <div class="relative lg:flex h-full w-screen">
+    <div ref="leftside" class="w-1/6">
+      <div ref="Prompter" class="m-5" >
+          <p> {{prompts[0]}}</p>
+          
 
-    <div ref="Prompter" class="my-10" >
-        <p> {{prompts[0]}}</p>
+      </div>
+      <div ref="Timer">
         <p> Time: {{ time }}</p>
+      </div>
 
     </div>
-    
-    <div class="border-solid border-2">
-        <vue-drawing-canvas ref="VueCanvasDrawing" 
-        :width="width" :height = "height" />
+      
+    <div ref="center" class="w-fit">
+      <div class="border-solid border-2">
+          <vue-drawing-canvas ref="VueCanvasDrawing" 
+          :width="width" :height = "height" lineJoin = "round"/>
 
+      </div>
     </div>
-    
-    <div ref="ToolSelect">
-        Tools
+    <div ref="rightside" class="w-1/6">
+      <div ref="ToolSelect">
+          Tools
+          <div v-for="tool in enabledTools">
+            <input @click="$emit('toolSelect')" type="radio" name="tools" :id="tool.message" :value="tool.message" v-model="toolSelected" />
+            <label>{{ tool.message }}</label>
+          </div>
+         
+      </div>
+      <div ref="ToolConfig">
+
+      </div>
+      <div ref="PaletteSelect">
         <PaletteSect ref = "PaletteSect" colors="['#f00', '#00ff00', '#00ff0055', 'rgb(201, 76, 76)', 'rgba(0,0,255,1)', 'hsl(89, 43%, 51%)', 'hsla(89, 43%, 51%, 0.6)']"
-         />
+          />
+      </div>
     </div>
+      
+    </div>
+ 
+    
     
         
     
@@ -25,10 +48,20 @@
 
 
 <script>
-
+  import { ref} from 'vue'
     import VueDrawingCanvas from "vue-drawing-canvas";
     import PaletteSect from "../components/draw/PaletteSect.vue";
+    
+    
     export default{
+      setup(){
+          const enabledTools= ref([{pen:'Pen'},
+            {eraser:'Eraser'},
+            {fill:'Fill'}])
+          return{
+            enabledTools
+          }
+        },
         name: "GoGame",
         props:{
             palette: String,
@@ -42,6 +75,8 @@
             VueDrawingCanvas,
             PaletteSect,
         },
+        emits:['toolChange', 'timerUp', 'timerPause'],
+        
         
     };
 </script>
