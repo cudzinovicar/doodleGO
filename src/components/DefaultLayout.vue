@@ -1,7 +1,6 @@
 <template>
    
-  <div class="text-black dark:text-white block w-full mx-auto items-baseline pb-50 items-center
-   justify-center flex-grow">
+  <div class="text-black dark:text-white block w-full items-center pb-10 justify-center flex-grow">
     <navbar class="flex-1"/>
     
   </div>

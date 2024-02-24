@@ -1,9 +1,9 @@
 
 <template>
-  <div class="relative lg:flex h-full w-screen">
+  <div class=" lg:flex  w-full">
     <div ref="leftside" class="w-1/6">
       <div ref="Prompter" class="m-5" >
-          <p> {{prompts[0]}}</p>
+          <PromptSect :prompts=prompts />
           
 
       </div>
@@ -51,6 +51,7 @@
   import { ref} from 'vue'
     import VueDrawingCanvas from "vue-drawing-canvas";
     import PaletteSect from "../components/draw/PaletteSect.vue";
+    import PromptSect from "../components/draw/PromptSect.vue";
     
     
     export default{
@@ -74,8 +75,9 @@
         components: {
             VueDrawingCanvas,
             PaletteSect,
+            PromptSect,
         },
-        emits:['toolChange', 'timerUp', 'timerPause'],
+        emits:['toolChange', 'timerUp', 'timerPause', 'nextPrompt', 'goFinished'],
         
         
     };

@@ -1,10 +1,10 @@
 <template>
     
-    <div class="w-full overflow-auto justify-center align-middle no-scrollbar">
+    <div class=" w-full  overflow-auto justify-center align-middle">
         <div>
             <HomeBlock class="bg-gradient-to-br from-red-500 via-pink-400 to-purple-600"
             color1="red" color2="purple" title="Ready" desc="A widely available web app game for desktop and mobile use.
-            Responsive design and compatiblity checks ensures a smooth experience while susing the app on any device and browser" imgPath="./images/ready.svg" alt="Multiple computer devices including a desktop monitor, tablet, and portable phone"/>
+            Responsive design and compatiblity checks ensures a smooth experience while using the app on any device and browser" imgPath="./images/ready.svg" alt="Multiple computer devices including a desktop monitor, tablet, and portable phone"/>
 
         </div>
         <div>

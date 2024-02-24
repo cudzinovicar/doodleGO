@@ -1,5 +1,5 @@
 <template>
-    <GoGame width="400" height="400" time="60" :prompts='["Dog", "Mickey Mouse", "Tacos"]'
+    <GoGame :width="800" :height="800" time="60" :prompts='["Dog", "Mickey Mouse", "Tacos"]'
     />
 </template>
 
