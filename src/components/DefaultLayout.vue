@@ -4,7 +4,7 @@
     <navbar class="flex-1"/>
     
   </div>
-  <div class="">
+  <div class="text-black dark:text-white">
     <router-view class="flex-1"/>
   </div>
   
